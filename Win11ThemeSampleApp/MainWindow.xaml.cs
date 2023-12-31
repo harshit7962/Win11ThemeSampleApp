@@ -20,5 +20,25 @@ namespace Win11ThemeSampleApp
         {
             InitializeComponent();
         }
+
+        private void clearAllGroup1(object sender, RoutedEventArgs e)
+        {
+            checkBox1.IsChecked = checkBox2.IsChecked = checkBox3.IsChecked = false;
+        }
+
+        private void checkAllGroup1(object sender, RoutedEventArgs e)
+        {
+            checkBox1.IsChecked = checkBox2.IsChecked = checkBox3.IsChecked = true;
+        }
+
+        private void clearAllGroup2(object sender, RoutedEventArgs e)
+        {
+            checkBox4.IsChecked = checkBox5.IsChecked = checkBox6.IsChecked = checkBox7.IsChecked = false;
+        }
+
+        private void checkAllGroup2(object sender, RoutedEventArgs e)
+        {
+            checkBox4.IsChecked = checkBox5.IsChecked = checkBox6.IsChecked = checkBox7.IsChecked = true;
+        }
     }
 }

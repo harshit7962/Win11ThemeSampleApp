@@ -19,10 +19,15 @@ namespace Win11ThemeTest
             using (var automation = new UIA3Automation())
             {
                 var window = app.GetMainWindow(automation);
-                var checkBox = window.FindFirstDescendant(cf => cf.ByName("Test Checkbox")).AsCheckBox();
-                Assert.That(checkBox.ToggleState, Is.EqualTo(ToggleState.Off));
-                checkBox.Toggle();
-                Assert.That(checkBox.ToggleState, Is.EqualTo(ToggleState.On));
+                var checkBox1 = window.FindFirstDescendant(cf => cf.ByAutomationId("firstCheckBox")).AsCheckBox();
+                var checkBox2 = window.FindFirstDescendant(cf => cf.ByAutomationId("lastCheckBox")).AsCheckBox();
+                Assert.That(checkBox1.ToggleState, Is.EqualTo(ToggleState.Off));
+                checkBox1.Toggle();
+                Assert.That(checkBox1.ToggleState, Is.EqualTo(ToggleState.On));
+
+                Assert.That(checkBox2.ToggleState, Is.EqualTo(ToggleState.Off));
+
+                window.Close();
             }
         }
     }

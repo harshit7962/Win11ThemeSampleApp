@@ -7,10 +7,34 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <StackPanel Orientation="Vertical">
-            <Button Content="Click Me" Appearance="Light"/>
-            <CheckBox Content="Test Checkbox"/>
-            <RadioButton>Hello World</RadioButton>
-        </StackPanel>
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="20">
+            <GroupBox Header="Group 1">
+                <StackPanel>
+                    <CheckBox Name="checkBox1" Content="Checkbox 1" AutomationProperties.AutomationId="firstCheckBox" />
+                    <CheckBox Name="checkBox2" Content="Checkbox 2" AutomationProperties.AutomationId="secondCheckBox"/>
+                    <CheckBox Name="checkBox3" Content="Checkbox 3" AutomationProperties.AutomationId="thirdCheckBox"/>
+
+                    <StackPanel Orientation="Horizontal">
+                        <Button Content="Clear All" Click="clearAllGroup1" />
+                        <Button Content="Select All" Click="checkAllGroup1" />
+                    </StackPanel>
+                </StackPanel>
+            </GroupBox>
+
+                <GroupBox Header="Group 2">
+                    <StackPanel>
+                        <CheckBox Name="checkBox4" Content="Checkbox 4" AutomationProperties.AutomationId="fourthCheckBox"/>
+                        <CheckBox Name="checkBox5" Content="Checkbox 5" AutomationProperties.AutomationId="fifthCheckBox"/>
+                        <CheckBox Name="checkBox6" Content="Checkbox 6" AutomationProperties.AutomationId="sixthCheckBox"/>
+                        <CheckBox Name="checkBox7" Content="Checkbox 7" AutomationProperties.AutomationId="seventhCheckBox"/>
+                        <StackPanel Orientation="Horizontal">
+                            <Button Content="Clear All" Click="clearAllGroup2" />
+                            <Button Content="Select All" Click="checkAllGroup2" />
+                        </StackPanel>
+                    </StackPanel>
+                </GroupBox>
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Window>
