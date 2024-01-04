@@ -7,17 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <StackPanel>
-            <Button Content="Open Popup" Click="OpenPopup_Click"/>
-            <Button Content="Close Popup" Click="ClosePopup_Click" />
-        </StackPanel>
-        
-
-        <!-- Define the Popup -->
-        <Popup Name="myPopup" Placement="Bottom" IsOpen="False">
-            <Border BorderBrush="Black" BorderThickness="1" Background="LightGray">
-                <TextBlock Margin="10" Text="This is a Popup!"/>
-            </Border>
-        </Popup>
+        <ListBox Name="bricsListBox" Width="200" VerticalAlignment="Center">
+                <ListBoxItem Content="Brazil"/>
+                <ListBoxItem Content="Russia"/>
+                <ListBoxItem Content="India"/>
+                <ListBoxItem Content="China"/>
+                <ListBoxItem Content="South Africa"/>
+        </ListBox>
     </Grid>
 </Window>

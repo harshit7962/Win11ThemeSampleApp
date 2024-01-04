@@ -11,8 +11,8 @@
                 <ResourceDictionary Source="pack://application:,,,/PresentationFramework.Win11;component/resources/presentationframework.win11.xaml"/>
                 <ResourceDictionary Source="pack://application:,,,/PresentationFramework.Win11;component/resources/theme/light.xaml"/>
                 <ResourceDictionary Source="pack://application:,,,/PresentationFramework.Win11;component/styles/button.xaml" />
-                <ResourceDictionary Source="pack://application:,,,/PresentationFramework.Win11;component/styles/checkbox.xaml" />
-                <ResourceDictionary Source="pack://application:,,,/PresentationFramework.Win11;component/styles/RadioButton.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/PresentationFramework.Win11;component/styles/listbox.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/PresentationFramework.Win11;component/styles/listboxitem.xaml" />
 
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>

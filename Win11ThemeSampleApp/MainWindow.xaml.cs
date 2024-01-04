@@ -20,15 +20,5 @@ namespace Win11ThemeSampleApp
         {
             InitializeComponent();
         }
-        private void OpenPopup_Click(object sender, RoutedEventArgs e)
-        {
-            // Open the popup
-            myPopup.IsOpen = true;
-        }
-
-        private void ClosePopup_Click(object sender, RoutedEventArgs e)
-        {
-            myPopup.IsOpen = false;
-        }
     }
 }
