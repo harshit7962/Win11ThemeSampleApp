@@ -7,22 +7,10 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TreeView AllowDrop="True" ScrollViewer.CanContentScroll="False">
-            <TreeViewItem
-                    Header="Work Documents"
-                    IsExpanded="True"
-                    IsSelected="True">
-                <TreeViewItem Header="Feature Schedule" />
-                <TreeViewItem Header="Overall Project Plan" />
-            </TreeViewItem>
-            <TreeViewItem Header="Personal Documents">
-                <TreeViewItem Header="Contractor contact info" />
-                <TreeViewItem Header="Home Remodel">
-                    <TreeViewItem Header="Paint Color Scheme" />
-                    <TreeViewItem Header="Flooring Woodgrain Type" />
-                    <TreeViewItem Header="Kitchen Cabinet Style" />
-                </TreeViewItem>
-            </TreeViewItem>
-        </TreeView>
+        <Expander Header="Expand Me" ExpandDirection="Right">
+            <Grid>
+                <TextBlock Text="Expanded Text" />
+            </Grid>
+        </Expander>
     </Grid>
 </Window>
