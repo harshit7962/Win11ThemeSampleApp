@@ -8,17 +8,12 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid Margin="10">
         <StackPanel>
-            <Expander Header="Expand Me" ExpandDirection="Left">
-                <Grid>
-                    <TextBlock Text="Expanded Text" />
-                </Grid>
-            </Expander>
             <Expander Header="Expand Me" ExpandDirection="Up">
                 <Grid>
                     <TextBlock Text="Expanded Text" />
                 </Grid>
             </Expander>
-            <Expander Header="Expand Me" ExpandDirection="Right">
+            <Expander Header="Expand Me" ExpandDirection="Left">
                 <Grid>
                     <TextBlock Text="Expanded Text" />
                 </Grid>
@@ -28,7 +23,11 @@
                     <TextBlock Text="Expanded Text" />
                 </Grid>
             </Expander>
+            <Expander Header="Expand Me" ExpandDirection="Right">
+                <Grid>
+                    <TextBlock Text="Expanded Text" />
+                </Grid>
+            </Expander>
         </StackPanel>
-        
     </Grid>
 </Window>

@@ -12,8 +12,9 @@
                 <ResourceDictionary Source="pack://application:,,,/PresentationFramework.Win11;component/resources/theme/light.xaml"/>
                 <ResourceDictionary Source="pack://application:,,,/PresentationFramework.Win11;component/styles/button.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/PresentationFramework.Win11;component/styles/treeview.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/PresentationFramework.Win11;component/styles/expander.xaml" />
                 <!--<ResourceDictionary Source="pack://application:,,,/PresentationFramework.Win11;component/styles/expander.xaml" />-->
-                <ResourceDictionary Source=".\Dictionary1.xaml" />
+                <!--<ResourceDictionary Source=".\Dictionary1.xaml" />-->
 
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
