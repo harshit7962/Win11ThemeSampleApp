@@ -19,7 +19,7 @@ namespace Win11ThemeTest
             using (var automation = new UIA3Automation())
             {
                 var window = app.GetMainWindow(automation);
-                var checkBox = window.FindFirstDescendant(cf => cf.ByName("Test Checkbox")).AsCheckBox();
+                var checkBox = window.FindFirstDescendant(cf => cf.ByAutomationId("checkbox1")).AsCheckBox();
                 Assert.That(checkBox.ToggleState, Is.EqualTo(ToggleState.Off));
                 checkBox.Toggle();
                 Assert.That(checkBox.ToggleState, Is.EqualTo(ToggleState.On));
