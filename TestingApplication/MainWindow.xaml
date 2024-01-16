@@ -6,12 +6,18 @@
         xmlns:local="clr-namespace:TestingApplication"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <StackPanel Margin="10">
-            <Button Content="Click Me" Click="clickEvent" Width="200" />
-            <TextBlock Text="Loren Ipsum Dolor Sit" />
-            <Slider  />
-            <TextBox Text="TextBox Content..." />
-        </StackPanel>
-    </Grid>
+    <StackPanel>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20">
+            <Run Text="Counter: "/>
+            <Run x:Name="counterText" Text="0"/>
+        </TextBlock>
+        <RepeatButton Content="Increase Counter" HorizontalAlignment="Center" VerticalAlignment="Bottom"
+                      Click="RepeatButton_Click" Delay="500" Interval="100"/>
+        
+        <ToggleButton Content="Toggle Switch" HorizontalAlignment="Center" VerticalAlignment="Center"
+                      Checked="ToggleButton_Checked" Unchecked="ToggleButton_Unchecked"/>
+
+        <!-- TextBlock to display the toggle state -->
+        <TextBlock x:Name="toggleStateText" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="16"/>
+    </StackPanel>
 </Window>

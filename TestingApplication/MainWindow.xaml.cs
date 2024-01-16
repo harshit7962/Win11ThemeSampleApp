@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Diagnostics.Metrics;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,14 +17,29 @@ namespace TestingApplication
     /// </summary>
     public partial class MainWindow : Window
     {
+        private int counter = 0;
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void clickEvent(object sender, RoutedEventArgs e)
+        private void RepeatButton_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Button Clicked");
+            // Increase the counter and update the TextBlock
+            counter++;
+            counterText.Text = counter.ToString();
+        }
+
+        private void ToggleButton_Checked(object sender, RoutedEventArgs e)
+        {
+            // ToggleButton is checked
+            toggleStateText.Text = "Toggle Switch is ON";
+        }
+
+        private void ToggleButton_Unchecked(object sender, RoutedEventArgs e)
+        {
+            // ToggleButton is unchecked
+            toggleStateText.Text = "Toggle Switch is OFF";
         }
     }
 }
