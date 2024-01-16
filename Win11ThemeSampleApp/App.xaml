@@ -7,7 +7,7 @@
         <ResourceDictionary>
 
             <ResourceDictionary.MergedDictionaries>
-                <ThemesDictionary  Theme="Dark"/>
+                <ThemesDictionary  Theme="Light"/>
                 <ControlsDictionary />
             </ResourceDictionary.MergedDictionaries>
             

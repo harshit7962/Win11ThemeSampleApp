@@ -7,17 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <StackPanel>
-        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20">
-            <Run Text="Counter: "/>
-            <Run x:Name="counterText" Text="0"/>
-        </TextBlock>
-        <RepeatButton Content="Increase Counter" HorizontalAlignment="Center" VerticalAlignment="Bottom"
-                      Click="RepeatButton_Click" Delay="500" Interval="100"/>
-        
-        <ToggleButton Content="Toggle Switch" HorizontalAlignment="Center" VerticalAlignment="Center"
-                      Checked="ToggleButton_Checked" Unchecked="ToggleButton_Unchecked"/>
+        <Button Content="Show View 1" Click="ShowView1_Click" />
+        <Button Content="Show View 2" Click="ShowView2_Click" />
 
-        <!-- TextBlock to display the toggle state -->
-        <TextBlock x:Name="toggleStateText" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="16"/>
+        <ContentControl x:Name="contentControl" Margin="10" />
     </StackPanel>
 </Window>
